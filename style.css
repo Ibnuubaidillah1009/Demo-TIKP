@@ -1,20 +1,89 @@
-body{
-    background-color: #FFFFE0;
-    font-family: Arial, sans-serif;
+body {
+    background: linear-gradient(135deg, #FFFFE0, #FFE4B5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
-.Kartu-profil{
-    width: 300px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+.profile-card {
+    width: 350px;
+    margin: 20px;
+    padding: 30px;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.profile-image {
+    margin-bottom: 20px;
+}
+
 img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
     object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+.profile-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.instagram-link {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #FFE4B5;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.greet-button {
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #4CAF50, #45a049);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+@media (max-width: 400px) {
+    .profile-card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .profile-info h1 {
+        font-size: 24px;
+    }
+
+    img {
+        width: 120px;
+        height: 120px;
+    }
 }
